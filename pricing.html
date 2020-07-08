@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Bootstrap4.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="#">
+            <span class="text-danger d-inline-flex align-items-center">SMS</span><span class="text-white">LIVE</span><span class="text-primary">247</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+                
+                <div class="dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#" role="button" id="features" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Features
+                    </a>
+                
+                    <div class="dropdown-menu" aria-labelledby="features">
+                        <a class="dropdown-item" href="#">Action1</a>
+                        <a class="dropdown-item" href="#">Another action1</a>
+                        <a class="dropdown-item" href="#">Something else here1</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#" role="button" id="services" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                
+                    <div class="dropdown-menu" aria-labelledby="services">
+                        <a class="dropdown-item" href="#">Action2</a>
+                        <a class="dropdown-item" href="#">Another action2</a>
+                        <a class="dropdown-item" href="#">Something else here2</a>
+                    </div>
+                </div>
+                <li class="nav-item mx-lg-2">
+                    <a class="nav-link text-white" href="#">Developer API</a>
+                </li>
+                <li class="nav-item mx-lg-2">
+                    <a class="nav-link text-white" href="#">Pricing</a>
+                </li>
+                <li class="nav-item mx-lg-2">
+                    <a class="nav-link text-white" href="#">FAQ</a>
+                </li>
+            </ul>
+
+            <button class="btn btn-sm btn-light mr-2">Sign Up</button>
+            <button class="btn btn-sm btn-primary">Login</button>
+        </div>
+    </nav>
+
+    <header class=" container background-img pricingBanner d-flex align-items-center">
+        <div class="container d-flex align-items-center mt-lg-5 h-100">
+            <div class="text-center">
+                <h1 class="font-weight-normal text-white mt-lg-5 pt-5">
+                    Our Pricing is the best around, you can confirm right here
+                </h1>
+            </div>
+            
+        </div>
+    </header>
+
+    <main class="my-5">
+        <section class="container mb-3">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h4>Pricing</h4>
+                    <p class="lead">
+                        We offer SMS at Wholesale Prices with a Sliding Scale for Bulk purchases  <br>
+                        The More you buy, the less you pay.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 col-lg-8">
+                      
+                    <table class="table">
+                    <thead class="thead-light">
+                        <tr>
+                        <th scope="col">Credit Volume (Quantity)</th>
+                        <th scope="col">Price in Naira / SMS</th>
+                        <th scope="col">Free Bonus Added</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Registration + 10 test credits</td>
+                        <td>FREE</td>
+                        <td>N/A</td>
+                        </tr>
+                        <tr>
+                        <td>100 - 4,999</td>
+                        <td>₦ 2.25</td>
+                        <td>No promo running</td>
+                        </tr>
+                        <tr>
+                        <td>5,000 - 9,999</td>
+                        <td>₦ 2.15</td>
+                        <td>No promo running</td>
+                        </tr>
+                        <tr>
+                        <td>10,000 - 49,999</td>
+                        <td>₦ 2.05</td>
+                        <td>No promo running</td>
+                        </tr>
+                        <tr>
+                        <td>50,000 - 99,999</td>
+                        <td>₦ 1.95</td>
+                        <td>No promo running</td>
+                        </tr>
+                        <tr>
+                        <td>100,000 - 499,999</td>
+                        <td>₦ 1.85</td>
+                        <td>No promo running</td>
+                        </tr>
+                        <tr>
+                        <td>500,000 - Above</td>
+                        <td>₦ 1.75</td>
+                        <td>No promo running</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                    <div class="card">
+                        <header class="card-header bg-light h6">Price Calculator</header>
+                        <section class="card-body border-bottom border-secondary">
+                            <p>
+                                <input type="text" class="form-control" placeholder="SMS Quantity"/>
+                            </p>
+                            
+                            <div class="form-group px-2 d-flex">
+                                <label for="rate" class="w-50 col-form-label h6">Rate (Naira)</label>
+                                <div class="w-50">
+                                    <input type="text" readonly class="form-control-plaintext" id="rate" value="₦ 2.15">
+                                </div>
+                            </div>
+                            <div class="form-group px-2 d-flex">
+                                <label for="rate" class="w-50 col-form-label h6">Price (Naira)</label>
+                                <div class="w-50">
+                                    <input type="text" readonly class="form-control-plaintext" id="rate" value="₦ 10,750.00">
+                                </div>
+                            </div>
+                        </section>
+                        <p class="card-footer mb-0">
+                            <button class="btn btn-sm btn-secondary"> Get Price</button>
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <header class="mb-3">
+                <h4>Bank Accounts</h4>
+                <h6 class="text-muted d-inline-block">Account Name:</h6> <h6 class="d-inline-block">IDevWorks Technologies Limited</h6>
+            </header>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mb-3 border-0  mx-auto mx-md-0" style="max-width: 300px;">
+                        <div class="row no-gutters">
+                            <div class="col-sm-4">
+                                <div class="card-header h-100 bg-light d-flex align-items-center justify-content-center p-0 border-0">
+                                    <img src="images/gtbank.svg" width="60px"/>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                    <h6 class="card-title">001 123 1140</h6>
+                                    <h6 class="card-title mb-0 text-secondary">GTBank</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3 border-0  mx-auto mx-md-0" style="max-width: 300px;">
+                        <div class="row no-gutters">
+                            <div class="col-sm-4">
+                                <div class="card-header h-100 bg-light d-flex align-items-center justify-content-center p-0 border-0">
+                                    <img src="images/zenith.svg" width="60px"/>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                    <h6 class="card-title">101 077 9719</h6>
+                                    <h6 class="card-title mb-0 text-secondary">Zenith</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3 border-0  mx-auto mx-md-0" style="max-width: 300px;">
+                        <div class="row no-gutters">
+                            <div class="col-sm-4">
+                                <div class="card-header h-100 bg-light d-flex align-items-center justify-content-center p-0 border-0">
+                                    <img src="images/access.png" width="60px"/>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                    <h6 class="card-title">000 282 6216</h6>
+                                    <h6 class="card-title mb-0 text-secondary">Diamond / Access</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3 border-0  mx-auto mx-md-0" style="max-width: 300px;">
+                        <div class="row no-gutters">
+                            <div class="col-sm-4">
+                                <div class="card-header h-100 bg-light d-flex align-items-center justify-content-center p-0 border-0">
+                                    <img src="images/polaris.png" width="60px"/>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                    <h6 class="card-title">177 121 6947</h6>
+                                    <h6 class="card-title mb-0 text-secondary">Skye / Polaris</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3 border-0  mx-auto mx-md-0" style="max-width: 300px;">
+                        <div class="row no-gutters">
+                            <div class="col-sm-4">
+                                <div class="card-header h-100 bg-light d-flex align-items-center justify-content-center p-0 border-0">
+                                    <img src="images/uba.svg" width="60px"/>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                    <h6 class="card-title">101 528 4528</h6>
+                                    <h6 class="card-title mb-0 text-secondary">UBA</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3 border-0  mx-auto mx-md-0" style="max-width: 300px;">
+                        <div class="row no-gutters">
+                            <div class="col-sm-4">
+                                <div class="card-header h-100 bg-light d-flex align-items-center justify-content-center p-0 border-0">
+                                    <img src="images/ecobank.jpg" width="60px"/>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                    <h6 class="card-title">375 201 4393</h6>
+                                    <h6 class="card-title mb-0 text-secondary">Ecobank</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            
+
+
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <section class="container py-4">
+            <div class="row">
+                <article class="col-6 col-md-2">
+                    <h6 class="text-secondary">Features</h6>
+                    <ul class="list-unstyled small">
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">OTP Pin Generation</a>
+                        </li>
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">2 Factor Authentication</a>
+                        </li>
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">Transactional Email Notifications</a>
+                        </li>
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">Transactional SMS on DND</a>
+                        </li>
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">SMS from Spreadsheet</a>
+                        </li>
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">Send Multimedia Messages</a>
+                        </li>
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">Sub Account</a>
+                        </li>
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">Become a Reseller</a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="col-6 col-md-2">
+                    <h6 class="text-secondary">Services</h6>
+                    <ul class="list-unstyled small">
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">Two-way Communication</a>
+                        </li>
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">Number LookUp</a>
+                        </li>
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">Regional SMS</a>
+                        </li>
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">Communicate with Flows</a>
+                        </li>
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">Voice API</a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="col-lg-2">
+                    <h6 class="text-secondary">Developer API</h6>
+                    <ul class="list-unstyled small">
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">Voice API</a>
+                        </li>
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">HTTP API</a>
+                        </li>
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">SMPP API</a>
+                        </li>
+                        <li class="pb-1">
+                            <a href="#" class="text-muted">WebServices API (SOAP/XML)</a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="col-lg-4">
+                    <h6 class="text-secondary">Office</h6>
+                    <p class="small text-muted">
+                        iDevWorks Technologies Ltd. 6 Oremeta Street, Oregun, Ikeja, Lagos State, Republic of Nigeria.
+                    </p>
+
+                    <h6 class="text-secondary">Working Hours</h6>
+                    <p class="small text-muted">Mondays - Fridays : 8AM - 7PM <br>
+                        Saturdays : 8am - 4pm | 8pm - 12am
+                    </p>
+
+                    <h6 class="text-secondary">Email</h6>
+                    <p class="small text-muted">info@smslive247.com</p>
+                </article>
+
+                <article class="col-lg-2">
+                    <h6 class="text-secondary">Support</h6>
+                    <p class="small text-muted">+234-809-9999-247</p>
+
+                    <h6 class="text-secondary">Reseller / API</h6>
+                    <p class="small text-muted">+234-809-650-4224</p>
+
+                    <h6 class="text-secondary">Saturdays</h6>
+                    <p class="small text-muted">+234-817-805-3117</p>
+
+                </article>
+
+                <div class="col-12 px-0 clearfix">
+                    <small class="text-muted  mr-auto">&copy; iDevWorks Technologies 2020</small>
+                    <a href="#" class="px-2 text-muted small float-right">User Agreement</a>
+                    <a href="#" class="px-2 text-muted small float-right">Privacy Policy</a>
+                    <small class="text-muted float-right px-2">SMSLive247.com is an iDevWorks Technologies Service.</small>
+
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/Popper.min.js"></script>
+    <script src="js/Bootstrap4.min.js"></script>
+</body>
