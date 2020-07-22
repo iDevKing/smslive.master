@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Bootstrap4.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Homepage</title>
 </head>
+
 <body>
     <header class="background-img indexBanner">
         <div class="jumbotron jumbotron-fluid bg-transparent h-100 pt-0 text-light">
             <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <span class="text-danger d-inline-flex align-items-center">SMS</span><span class="text-white">LIVE</span><span class="text-primary">247</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -28,12 +29,17 @@
                             </a>
                         
                             <div class="dropdown-menu" aria-labelledby="features">
-                                <a class="dropdown-item" href="#">Action1</a>
-                                <a class="dropdown-item" href="#">Another action1</a>
-                                <a class="dropdown-item" href="#">Something else here1</a>
+                                <a class="dropdown-item" href="index.html#otp-pin-generation">OTP Pin Generation</a>
+                                <a class="dropdown-item" href="index.html#two-factor-authentication">2 Factor Authentication</a>
+                                <a class="dropdown-item" href="index.html#transactional-email-notification">Transactional Email Notifications</a>
+                                <a class="dropdown-item" href="index.html#transactional-sms-on-dnd">Transactional SMS on DND</a>
+                                <a class="dropdown-item" href="index.html#sms-from-spreadsheet">SMS from Spreadsheet</a>
+                                <a class="dropdown-item" href="index.html#send-multimedia-messages">Send Multimedia Messages</a>
+                                <a class="dropdown-item" href="index.html#sub-account">Sub Account</a>
+                                <a class="dropdown-item" href="index.html#become-a-reseller">Become a Reseller</a>
                             </div>
                         </div>
-
+        
                         <div class="dropdown">
                             <a class="nav-link text-white dropdown-toggle" href="#" role="button" id="services" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
@@ -41,9 +47,11 @@
                             </a>
                         
                             <div class="dropdown-menu" aria-labelledby="services">
-                                <a class="dropdown-item" href="#">Action2</a>
-                                <a class="dropdown-item" href="#">Another action2</a>
-                                <a class="dropdown-item" href="#">Something else here2</a>
+                                <a class="dropdown-item" href="index.html#two-way-communication">Two-way Communication</a>
+                                <a class="dropdown-item" href="index.html#number-lookup">Number LookUp</a>
+                                <a class="dropdown-item" href="index.html#regional-sms">Regional SMS</a>
+                                <a class="dropdown-item" href="index.html#multi-channel-communication">Communicate with Flows</a>
+                                <a class="dropdown-item" href="index.html#voice-api">Voice API</a>
                             </div>
                         </div>
                         <li class="nav-item mx-lg-2">
@@ -53,10 +61,10 @@
                             <a class="nav-link text-white" href="pricing.html">Pricing</a>
                         </li>
                         <li class="nav-item mx-lg-2">
-                            <a class="nav-link text-white" href="#">FAQ</a>
+                            <a class="nav-link text-white" href="faq.html">FAQ</a>
                         </li>
                     </ul>
-    
+        
                     <button class="btn btn-sm btn-light mr-2">Sign Up</button>
                     <button class="btn btn-sm btn-primary">Login</button>
                 </div>
@@ -82,7 +90,7 @@
         <section class="container features mb-4">
             <div class="row">
 
-                <article class="col-sm-6 col-md-3">
+                <article class="col-sm-6 col-md-3 mb-3" id="otp-pin-generation">
                     <div class="card bg-transparent border-0">
                         <header class="card-header background-img features-card-header" id="otp"></header>
                         <div class="card-body px-0 bg-transparent">
@@ -91,12 +99,11 @@
                                 Normal OTP: SMS <br>
                                 OTP with Voice: SMS + Voice
                             </p>
-                            <a href="#" class="btn btn-link p-0">Learn more ></a>
                         </div>
                     </div>
                 </article>
 
-                <article class="col-sm-6 col-md-3">
+                <article class="col-sm-6 col-md-3 mb-3" id="two-factor-authentication">
                     <div class="card bg-transparent border-0">
                         <header class="card-header background-img features-card-header" id="authentication"></header>
                         <div class="card-body px-0 bg-transparent">
@@ -105,12 +112,11 @@
                                 <li>Protect Logins</li>
                                 <li>Account Security</li>
                             </ul>
-                            <a href="#" class="btn btn-link p-0">Learn more ></a>
                         </div>
                     </div>
                 </article>
                 
-                <article class="col-sm-6 col-md-3">
+                <article class="col-sm-6 col-md-3 mb-3" id="transactional-email-notification">
                     <div class="card bg-transparent border-0">
                         <header class="card-header background-img features-card-header" id="email-notifications"></header>
                         <div class="card-body px-0 bg-transparent">
@@ -118,12 +124,11 @@
                             <p class="card-text">
                                 Send purchase receipt emails directly to the inbox
                             </p>
-                            <a href="#" class="btn btn-link p-0">Learn more ></a>
                         </div>
                     </div>
                 </article>
 
-                <article class="col-sm-6 col-md-3">
+                <article class="col-sm-6 col-md-3 mb-3" id="transactional-sms-on-dnd">
                     <div class="card bg-transparent border-0">
                         <header class="card-header background-img features-card-header" id="DND-notifications"></header>
                         <div class="card-body px-0 bg-transparent">
@@ -131,12 +136,11 @@
                             <p class="card-text">
                                 Update clients about their orders
                             </p>
-                            <a href="#" class="btn btn-link p-0">Learn more ></a>
                         </div>
                     </div>
                 </article>
 
-                <article class="col-sm-6 col-md-3">
+                <article class="col-sm-6 col-md-3 mb-3" id="sms-from-spreadsheet">
                     <div class="card bg-transparent border-0">
                         <header class="card-header background-img features-card-header" id="smsFromSpreadsheet"></header>
                         <div class="card-body px-0 bg-transparent">
@@ -144,12 +148,11 @@
                             <p class="card-text">
                                 Customized SMS will be populated programmatically from Spreadsheets
                             </p>
-                            <a href="#" class="btn btn-link p-0">Learn more ></a>
                         </div>
                     </div>
                 </article>
 
-               <article class="col-sm-6 col-md-3">
+               <article class="col-sm-6 col-md-3 mb-3" id="send-multimedia-messages">
                     <div class="card bg-transparent border-0">
                         <header class="card-header background-img features-card-header" id="high-res-messages"></header>
                         <div class="card-body px-0 bg-transparent">
@@ -158,25 +161,23 @@
                                 <li>High Resolution photos</li>
                                 <li>Videos, GIFs</li>
                             </ul>
-                            <a href="#" class="btn btn-link p-0">Learn more ></a>
                         </div>
                     </div>
                 </article>
 
-                <article class="col-sm-6 col-md-3">
+                <article class="col-sm-6 col-md-3 mb-3" id="sub-account">
                     <div class="card bg-transparent border-0">
-                        <header class="card-header background-img features-card-header" id="sub-account"></header>
+                        <header class="card-header background-img features-card-header" id="sub-Account"></header>
                         <div class="card-body px-0 bg-transparent">
                             <h6 class="card-title">Sub Account</h6>
                             <p class="card-text">Create Sub Accounts for easy management.
                                 Organize groups and contacts seemlessly
                             </p>
-                            <a href="#" class="btn btn-link p-0">Learn more ></a>
                         </div>
                     </div>
                 </article>
 
-                <article class="col-sm-6 col-md-3">
+                <article class="col-sm-6 col-md-3 mb-3" id="become-a-reseller">
                     <div class="card bg-transparent border-0">
                         <header class="card-header background-img features-card-header" id="reseller"></header>
                         <div class="card-body px-0 bg-transparent">
@@ -184,7 +185,6 @@
                             <p class="card-text">Get your customized SMS website with your logo, set prizes, sell SMS
                                 and make cool margins.
                             </p>
-                            <a href="#" class="btn btn-link p-0">Learn more ></a>
                         </div>
                     </div>
                 </article>
@@ -239,7 +239,6 @@
                             <p class="card-text">
                                 Make sure your message is headed to a valid number
                             </p>
-                            <a href="#" class="btn btn-link p-0">Learn more ></a>
                         </div>
                     </div>
                 </article>
@@ -256,7 +255,6 @@
                                 Connect in regional language where it matters. Let them choose which language they prefer!
                                 Get the numbers segregated as per region.
                             </p>
-                            <a href="#" class="btn btn-link p-0">Learn more ></a>
                         </div>
                     </div>
                 </article>
@@ -275,7 +273,6 @@
                                 If SMS Delivery Report not received, Send Email <br>
                                 Other functions include: Voice call, IVR etc
                             </p>
-                            <a href="#" class="btn btn-link p-0">Learn more ></a>
                         </div>
                     </div>
                 </article>
@@ -293,7 +290,6 @@
                                 Team management<br>
                                 Extensive reports
                             </p>
-                            <a href="#" class="btn btn-link p-0">Learn more ></a>
                         </div>
                     </div>
                 </article>
@@ -312,28 +308,28 @@
                     <h6 class="text-secondary">Features</h6>
                     <ul class="list-unstyled small">
                         <li class="pb-1">
-                            <a href="#" class="text-muted">OTP Pin Generation</a>
+                            <a href="#otp-pin-generation" class="text-muted">OTP Pin Generation</a>
                         </li>
                         <li class="pb-1">
-                            <a href="#" class="text-muted">2 Factor Authentication</a>
+                            <a href="#two-factor-authentication" class="text-muted">2 Factor Authentication</a>
                         </li>
                         <li class="pb-1">
-                            <a href="#" class="text-muted">Transactional Email Notifications</a>
+                            <a href="#transactional-email-notifications" class="text-muted">Transactional Email Notifications</a>
                         </li>
                         <li class="pb-1">
-                            <a href="#" class="text-muted">Transactional SMS on DND</a>
+                            <a href="#transactional-sms-on-dnd" class="text-muted">Transactional SMS on DND</a>
                         </li>
                         <li class="pb-1">
-                            <a href="#" class="text-muted">SMS from Spreadsheet</a>
+                            <a href="#sms-from-spreadsheet" class="text-muted">SMS from Spreadsheet</a>
                         </li>
                         <li class="pb-1">
-                            <a href="#" class="text-muted">Send Multimedia Messages</a>
+                            <a href="#send-multimedia-messages" class="text-muted">Send Multimedia Messages</a>
                         </li>
                         <li class="pb-1">
-                            <a href="#" class="text-muted">Sub Account</a>
+                            <a href="#sub-Account" class="text-muted">Sub Account</a>
                         </li>
                         <li class="pb-1">
-                            <a href="#" class="text-muted">Become a Reseller</a>
+                            <a href="#become-a-reseller" class="text-muted">Become a Reseller</a>
                         </li>
                     </ul>
                 </article>
@@ -342,19 +338,19 @@
                     <h6 class="text-secondary">Services</h6>
                     <ul class="list-unstyled small">
                         <li class="pb-1">
-                            <a href="#" class="text-muted">Two-way Communication</a>
+                            <a href="#two-way-communication" class="text-muted">Two-way Communication</a>
                         </li>
                         <li class="pb-1">
-                            <a href="#" class="text-muted">Number LookUp</a>
+                            <a href="#number-lookup" class="text-muted">Number LookUp</a>
                         </li>
                         <li class="pb-1">
-                            <a href="#" class="text-muted">Regional SMS</a>
+                            <a href="#regional-sms" class="text-muted">Regional SMS</a>
                         </li>
                         <li class="pb-1">
-                            <a href="#" class="text-muted">Communicate with Flows</a>
+                            <a href="#multi-channel-communication" class="text-muted">Communicate with Flows</a>
                         </li>
                         <li class="pb-1">
-                            <a href="#" class="text-muted">Voice API</a>
+                            <a href="#voice-api" class="text-muted">Voice API</a>
                         </li>
                     </ul>
                 </article>
